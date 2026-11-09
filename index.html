@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>بداية جديدة | موقعي الإلكتروني</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.8;
+        }
+
+        /* شريط التنقل */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #1e293b;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* القسم الرئيسي */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 6vw, 52px);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-3px);
+        }
+
+        /* البطاقات */
+        .features {
+            padding: 70px 8%;
+            background: #1e293b;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #0f172a;
+            padding: 35px 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        /* معلومات الموقع */
+        .about {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #94a3b8;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- القائمة العلوية -->
+    <header>
+        <div class="logo">NewStart 🚀</div>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#features">المميزات</a>
+            <a href="#about">من نحن</a>
+        </nav>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section class="hero" id="home">
+
+        <h1>
+            مرحباً بك في <span>عالم الإبداع</span>
+        </h1>
+
+        <p>
+            هذا موقعي الإلكتروني الجديد.
+            هنا تبدأ رحلتي في عالم البرمجة
+            وتطوير المواقع والتكنولوجيا.
+        </p>
+
+        <a href="#features" class="btn">
+            اكتشف الموقع
+        </a>
+
+    </section>
+
+    <!-- المميزات -->
+    <section class="features" id="features">
+
+        <h2>ماذا يقدم هذا الموقع؟</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 البرمجة</h3>
+                <p>
+                    اكتشاف عالم البرمجة
+                    وتطوير التطبيقات والمواقع.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 التصميم</h3>
+                <p>
+                    تصميم واجهات حديثة
+                    وتجارب مستخدم مميزة.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 الذكاء الاصطناعي</h3>
+                <p>
+                    استكشاف تقنيات المستقبل
+                    والتطبيقات الذكية.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- عن الموقع -->
+    <section class="about" id="about">
+
+        <h2>عن هذا الموقع</h2>
+
+        <p>
+            هذا المشروع هو بداية جديدة
+            لتعلم تطوير الويب وبناء مشاريع احترافية.
+        </p>
+
+    </section>
+
+    <!-- أسفل الصفحة -->
+    <footer>
+        <p>© 2026 NewStart - جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>
